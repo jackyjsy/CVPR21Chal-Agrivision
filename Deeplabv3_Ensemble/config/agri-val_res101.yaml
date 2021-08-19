@@ -1,0 +1,18 @@
+DATASET:
+  root_dataset: "data/"
+  list_val: "./data/agri-val.odgt"
+  num_class: 9
+  segm_downsampling_rate: 1.0
+MODEL:
+  arch: "deeplab"
+  os: 16
+  backbone: "resnet101"
+  ibn_mode: "a"
+  num_low_level_feat: 3
+
+VAL:
+  batch_size_per_gpu: 16
+  checkpoint: "./res101_weight_5078.pth"
+  visualized_pred: "val_pred"
+  visualized_label: "val_gt"
+DIR: "ckpt/"
