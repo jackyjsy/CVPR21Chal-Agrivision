@@ -6,6 +6,7 @@ By [Songyao Jiang](https://www.songyaojiang.com/), [Bin Sun](https://github.com/
 ## Introduction
 The first model is modified MSCG-Net, please see [README.md](MSCG-Net/README.md) to train and test the model. The second model is modified MSCG-Net, please see [README.md](Deeplabv3_Ensemble/Readme.txt) to train and test the model. The results of the above models are assembled together to improve the overall mIoU using the ensemble code in Deeplabv3_Ensemble. We used ensemble results from two models to be our final submitted results in the challenge
 
+
 ## Pretrained models
 [Google Drive](https://drive.google.com/drive/folders/1hwGQ_aQbLREs2srYm9ktPTJbnFexcTc6?usp=sharing)
 
@@ -24,11 +25,29 @@ The first model is modified MSCG-Net, please see [README.md](MSCG-Net/README.md)
 | DeepLabv3  | ResNet-101 | 60M | 0.494 |
 | Ensemble   | N/A | 91M | 0.507 |
 
+## Summary of [AgriVision dataset 2021](https://www.agriculture-vision.com/agriculture-vision-2021/prize-challenge-2021)
+Splits: 56,944/18,334/19,708 train/val/test
+
+Resolution: 512 x 512
+
+Modalities: 1. RGB, 2. NIR (Near-infrared)
+
+Annotations:
+
+0 - background, 
+1 - double_plant, 
+2 - drydown, 
+3 - endrow, 
+4 - nutrient_deficiency, 
+5 - planter_skip, 
+6 - water, 
+7 - waterway, 
+8 - weed_cluster
+
 
 ---
 
 ## [MSCG-Net for Semantic Segmentation](MSCG-Net)
-## Introduce
 This model is modified from MSCG-Net models (MSCG-Net-50 and MSCG-Net-101) for semantic segmentation in [Agriculture-Vision Challenge and Workshop](https://www.agriculture-vision.com/agriculture-vision-2021/prize-challenge-2021) (CVPR 2021). 
 
 ### Pretrained model
@@ -36,12 +55,17 @@ This model is modified from MSCG-Net models (MSCG-Net-50 and MSCG-Net-101) for s
 
 
 ## [DeepLabv3 with Ensemble](Deeplabv3_Ensemble)
-### Introduce
-This repository contains code modified from Deeplabv3 for the CVPR 2021 Challenge on Agriculture Vision. This folder also contains ensemble code to obtain our final results.
+This folder contains code modified from Deeplabv3 for the CVPR 2021 Challenge on Agriculture Vision. This folder also contains ensemble code to obtain our final results.
 
 ### Pretrained models
 [https://drive.google.com/drive/folders/1VnPKVErUHEjbCe5ailsSvhXCjZWnw0qH?usp=sharing](https://drive.google.com/drive/folders/1VnPKVErUHEjbCe5ailsSvhXCjZWnw0qH?usp=sharing)
 
 
+## Reference
 
+https://github.com/samleoqh/MSCG-Net
+
+https://github.com/LAOS-Y/AgriVision
+
+https://github.com/HRNet/HRNet-Semantic-Segmentation
 
