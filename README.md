@@ -31,6 +31,9 @@ This repository contains code modified from MSCG-Net models (MSCG-Net-50 and MSC
 - pretrainedmodels
 - others (see requirements.txt)
 
+## Pretrained model
+[https://drive.google.com/file/d/1oW503NxUfwANfKQZ8zT3gG_XDWSuwwsQ/view?usp=sharing](https://drive.google.com/file/d/1oW503NxUfwANfKQZ8zT3gG_XDWSuwwsQ/view?usp=sharing)
+
 ## Dataset prepare
 
 1. change DATASET_ROOT to your dataset path in ./data/AgricultureVision/pre_process.py
