@@ -1,11 +1,3 @@
-# CVPR21Chal-Agrivision
-This repo contains the code to reproduce our results in CVPR21 Challenge on Agriculture-Vision.
-
-We used ensemble results from two models to be our final submitted results.
-
-The first model is modified MSCG-Net, please see [README.md](MSCG-Net/README.md) to train and test the model.
-
-
 # MSCG-Net for Semantic Segmentation
 ## Introduce
 This repository contains code modified from MSCG-Net models (MSCG-Net-50 and MSCG-Net-101) for semantic segmentation in [Agriculture-Vision Challenge and Workshop](https://www.agriculture-vision.com/agriculture-vision-2021/prize-challenge-2021) (CVPR 2021). Original readme file can be found [here](MSCGNET-README.MD)
