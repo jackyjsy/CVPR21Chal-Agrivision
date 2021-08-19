@@ -1,15 +1,20 @@
-# CVPR21Chal-Agrivision
-This repo contains the code to reproduce our results in CVPR21 Challenge on Agriculture-Vision.
+# CVPR 2021 Challenge on Agriculture Vision
+This repo contains the code to reproduce our results in CVPR21 Challenge on Agriculture-Vision. We ranked 4th in the supervised track.
 
-We used ensemble results from two models to be our final submitted results.
+By [Songyao Jiang](https://www.songyaojiang.com/), [Bin Sun](https://github.com/Sun1992/), and [Yun Fu](http://www1.ece.neu.edu/~yunfu/), from [Smile Lab @ Northeastern University](https://web.northeastern.edu/smilelab/)
 
-The first model is modified MSCG-Net, please see [README.md](MSCG-Net/README.md) to train and test the model.
+## Introduction
+The first model is modified MSCG-Net, please see [README.md](MSCG-Net/README.md) to train and test the model. The second model is modified MSCG-Net, please see [README.md](Deeplabv3_Ensemble/Readme.txt) to train and test the model. The results of the above models are assembled together to improve the overall mIoU using the ensemble code in Deeplabv3_Ensemble. We used ensemble results from two models to be our final submitted results in the challenge
+
+## Pretrained models
+[Google Drive](https://drive.google.com/drive/folders/1hwGQ_aQbLREs2srYm9ktPTJbnFexcTc6?usp=sharing)
 
 ## Code structure
 
 ```
-├── MSCGNet		        # Model 1
-└── Deeplabv3_Ensemble	# Model 2 and ensemble
+├── MSCGNet                # Model 1
+├── Deeplabv3_Ensemble	   # Model 2 and ensemble
+└── challenge_report       # Detailed report submitted
 
 ```
 ## Results Summary
@@ -19,8 +24,6 @@ The first model is modified MSCG-Net, please see [README.md](MSCG-Net/README.md)
 | DeepLabv3  | ResNet-101 | 60M | 0.494 |
 | Ensemble   | N/A | 91M | 0.507 |
 
-## Report
-Our challenge report can be found [here](challenge_report.pdf)
 
 ---
 
